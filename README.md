@@ -1,13 +1,13 @@
 # Dermatology-Detection-System-SKIN
 ### flask + pytorch
-Ò³ÃæÕ¹Ê¾+Æ¤·ô²¡Ô¤²â+Éñ¾­ÍøÂç
-### conda´´½¨²¢Ê¹ÓÃĞÂpython»·¾³
+é¡µé¢å±•ç¤º+çš®è‚¤ç—…é¢„æµ‹+ç¥ç»ç½‘ç»œ
+### condaåˆ›å»ºå¹¶ä½¿ç”¨æ–°pythonç¯å¢ƒ
 ```conda create -n skin python=3.8```  
 ```conda activate skin```
-### µ¼Èëpython¿â
+### å¯¼å…¥pythonåº“
 ```pip install -r requirements.txt```
-### ÔËĞĞ
+### è¿è¡Œ
 ```python ./app.py```  
-´úÂëÉèÖÃ¶Ë¿ÚºÅ1234£¬ÔÚÍ¬Ò»¾ÖÓòÍøÄÚip:¶Ë¿ÚºÅ£¬Ê¹ÓÃÊÖ»ú·ÃÎÊ¡£
-### Êı¾İ¼¯
-[![awesome](https://www.kaggle.com/datasets/salviohexia/isic-2019-skin-lesion-images-for-classification)](https://github.com/Zichuana/Zichuana-Dermatology-Detection-System-SKIN)
+ä»£ç è®¾ç½®ç«¯å£å·1234ï¼Œåœ¨åŒä¸€å±€åŸŸç½‘å†…ip:ç«¯å£å·ï¼Œä½¿ç”¨æ‰‹æœºè®¿é—®ã€‚
+### æ•°æ®é›†
+https://www.kaggle.com/datasets/salviohexia/isic-2019-skin-lesion-images-for-classification
