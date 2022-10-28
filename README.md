@@ -8,7 +8,7 @@
 ```pip install -r requirements.txt```
 ### 运行
 ```python ./app.py```  
-代码设置端口号1234，在同一局域网内ip:端口号，使用手机访问。
+代码设置端口号1234，在同一局域网内ip:端口号，使用手机访问，调用其摄像头。
 ### 数据集
 https://www.kaggle.com/datasets/salviohexia/isic-2019-skin-lesion-images-for-classification
 ### 演示
