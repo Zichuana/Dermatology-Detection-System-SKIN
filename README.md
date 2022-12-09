@@ -13,3 +13,5 @@
 https://www.kaggle.com/datasets/salviohexia/isic-2019-skin-lesion-images-for-classification
 ### 演示
 ![image](img.jpg)
+### 教程
+[我的博客](https://zichuana.github.io/2022/11/14/SKIN/)
