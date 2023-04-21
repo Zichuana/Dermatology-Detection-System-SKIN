@@ -62,7 +62,7 @@ for label in labels:
     files_path = '../DATA/SKIN/' + label
     files_list = os.listdir(files_path)
     print(len(files_list))
-    # train_file, test_val_file = data_split(files_list, 0.8)
+    # train_file, test_file = data_split(files_list, 0.8)
     # test_file, val_file = data_split(test_val_file, 0.5)
     # print(len(train_file), len(test_file), len(val_file))
     train_file, val_file = data_split(files_list, 0.8)

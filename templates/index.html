@@ -8,6 +8,7 @@
     <meta name="author" content="wpoceans">
 
     <title>SKIN</title>
+    <link href="manifest.webmanifest" rel="manifest">
     <link href="css/themify-icons.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/flaticon.css" rel="stylesheet">
@@ -134,8 +135,6 @@
     <!--features start -->
 </div>
 <!--features-features end -->
-<!-- about-area start-->
-<!-- about-area end-->
 <!-- case-area-start -->
 <div class="case-area section-padding">
     <div class="container">
@@ -305,12 +304,15 @@
         </div>
         <p></p>
         <div class="col col-md-6 slide-caption">
-            <div>
-                <!--                 href="javascript:;"-->
-                <input href="javascript:;" class="theme-btn" tabindex="0" type="file" name="file" id="file0">
-                </input>
-                <p></p>
-                <img src="" id="img0">
+            <div style="position: relative;">
+                <input id="file0"
+                       style="position: absolute; top: 0; bottom: 0; left: 0;right: 0; opacity: 0;"
+                       type="file" accept="image/gif, image/jpg, image/png" onchange="showImg(this)"/>
+                <!-- 自定义按钮效果 -->
+                <div style="text-align: top">
+                    <span style="font-size: 12px;">上传图片：</span>
+                    <img id="img0" src="image/index.jpg" style="width: 100px; height: 100px; vertical-align: middle;"/>
+                </div>
             </div>
             <p></p>
             <div>
@@ -340,11 +342,15 @@
         </div>
         <p></p>
         <div class="col col-md-6 slide-caption">
-            <div>
-                <input href="javascript:;" class="theme-btn" tabindex="0" type="file" accept="image/*" capture="camera"
-                       name="file" id="file1">
-                <p></p>
-                <img src="" id="img1">
+            <div style="position: relative;">
+                <input id="file1"
+                       style="position: absolute; top: 0; bottom: 0; left: 0;right: 0; opacity: 0;"
+                       type="file" accept="image/gif, image/jpg, image/png" onchange="showImg(this)" capture="camera"/>
+                <!-- 自定义按钮效果 -->
+                <div style="text-align: top">
+                    <span style="font-size: 12px;">拍摄图片：</span>
+                    <img id="img1" src="image/index.jpg" style="width: 40px; height: 40px; vertical-align: middle;"/>
+                </div>
             </div>
             <p></p>
             <div>
@@ -366,7 +372,9 @@
     <footer class="tp-site-footer">
         <div class="tp-upper-footer">
             <div class="section-title text-center"><h3>@Zichuana</h3></div>
-            <div class="section-title text-center">https://github.com/Zichuana/Zichuana-Dermatology-Detection-System-SKIN</div>
+            <div class="section-title text-center">
+                https://github.com/Zichuana/Zichuana-Dermatology-Detection-System-SKIN
+            </div>
         </div>
     </footer>
     <!-- end tp-site-footer -->
@@ -397,6 +405,7 @@
 <script src="js/gsap.min.js"></script>
 <!-- Custom script for this template -->
 <script src="js/script.js"></script>
+<script src="js/index.js"></script>
 <script type="text/javascript">
     $("#file0").change(function () {
         var objUrl = getObjectURL(this.files[0]);//获取文件信息
@@ -405,6 +414,16 @@
             $("#img0").attr("src", objUrl);
         }
     });
+
+    function showImg(input) {
+        var file = input.files[0];
+        var reader = new FileReader()
+        // 图片读取成功回调函数
+        reader.onload = function (e) {
+            document.getElementById('file0').src = e.target.result
+        }
+        reader.readAsDataURL(file)
+    }
 
     function test0() {
         var fileobj = $("#file0")[0].files[0];
@@ -456,6 +475,16 @@
             $("#img1").attr("src", objUrl);
         }
     });
+
+    function showImg(input) {
+        var file = input.files[0];
+        var reader = new FileReader()
+        // 图片读取成功回调函数
+        reader.onload = function (e) {
+            document.getElementById('file0').src = e.target.result
+        }
+        reader.readAsDataURL(file)
+    }
 
     function test1() {
         var fileobj = $("#file1")[0].files[0];

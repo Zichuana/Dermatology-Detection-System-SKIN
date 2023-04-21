@@ -1,0 +1,15 @@
+{
+  "background_color": "orange",
+  "description": "Auxiliary diagnostic system for skin diseases",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "/icon/R.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "name": "SKIN",
+  "short_name": "SHIN",
+  "start_url": "/"
+}
